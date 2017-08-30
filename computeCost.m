@@ -14,11 +14,10 @@ J = 0;
 %               You should set J to the cost.
 
 
-m = size(X, 1);
-predictions = X*theta;
+predictions = X * theta;
 sqrErrors = (predictions-y).^2;
 
-J = 1/(2*m) * sum(sqrErrors);
+J = 1 / (2 * m) * sum(sqrErrors);
 
 
 % =========================================================================
